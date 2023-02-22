@@ -1,12 +1,23 @@
-.navbar-lewagon {
-  justify-content: space-between;
+
+// container when closed
+.navbar-momentum {
   background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+// brand logo
+.navbar-logo {
+  height: 4%;
+  width: 6%;
+  fill: black;
 }
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+// tablets onward text is larger
+@media screen and (min-width: 500px) {
+  .menu-item {
+    a {
+      font-size: x-large;
+    }
+  }
 }

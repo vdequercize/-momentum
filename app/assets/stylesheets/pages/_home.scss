@@ -1,1 +1,36 @@
 // Specific CSS for your home-page
+
+.container-homepage {
+  width: 100%;
+  margin: auto;
+}
+
+.container-start {
+  height: 100vh;
+  background-color: lightgray;
+}
+
+.container-who {
+  height: 100vh;
+  background-color: salmon;
+}
+
+.container-what {
+  height: 100vh;
+  background-color: lightgray;
+}
+
+.container-references {
+  height: 100vh;
+  background-color: salmon;
+}
+
+.container-contact {
+  height: 100vh;
+  background-color: lightgray;
+}
+
+.text{
+  width: 80%;
+  margin: auto;
+}

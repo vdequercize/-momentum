@@ -1,0 +1,33 @@
+
+<div class="navbar navbar-expand-sm navbar-momentum">
+  <div class="container-fluid">
+    <%# start of left side %>
+    <%= link_to "#top", class: "navbar-brand" do %>
+      <% image_tag "logo_momentum.png", class:"navbar-logo" %>
+    <% end %>
+    <%# end of left side %>
+    <%# start of right side %>
+    <div >
+      <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <%= link_to "Accueil", "#top", class: "hdp-text nav-link text-dark" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Qui sommes-nous?", "#who", class: "hdp-text nav-link text-dark" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Notre positionnement", "#what", class: "hdp-text nav-link text-dark" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Blog", "https://medium.com/@czmclaudiu", target: :_blank, class: "hdp-text nav-link text-dark" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Nos références", "#references", class: "hdp-text nav-link text-dark" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Contact", "#contact", class: "hdp-text nav-link text-dark" %>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
