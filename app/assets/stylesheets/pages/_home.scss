@@ -6,31 +6,72 @@
 }
 
 .container-start {
-  height: 100vh;
+  height: 50vh;
   background-color: lightgray;
 }
 
 .container-who {
-  height: 100vh;
+  height: 50vh;
   background-color: salmon;
 }
 
 .container-what {
-  height: 100vh;
+  height: 50vh;
   background-color: lightgray;
 }
 
 .container-references {
-  height: 100vh;
+  height: 50vh;
   background-color: salmon;
 }
 
 .container-contact {
-  height: 100vh;
+  height: 50vh;
   background-color: lightgray;
 }
 
 .text{
   width: 80%;
   margin: auto;
+}
+
+.offers{
+  display: inline-flex;
+  margin-left: 4%;
+  margin-right: 4%;
+  border:none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #c3e0e0;
+  display: inline-flex;
+  margin: 2%;
+  border:none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.offer{
+  width: 33.3%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    font-family: $body-font;
+    img {
+      width: 350px;
+      height: 250px;
+    }
+}
+
+.middle-offer-borders {
+  border-left: 1px solid $white;
+  border-right: 1px solid $white;
 }

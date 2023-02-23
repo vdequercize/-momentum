@@ -5,28 +5,29 @@
     <%= link_to "#top", class: "navbar-brand" do %>
       <% image_tag "logo_momentum.png", class:"navbar-logo" %>
     <% end %>
+    <h2> MOMENTUM leadership </h2>
     <%# end of left side %>
     <%# start of right side %>
     <div >
       <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <%= link_to "Accueil", "#top", class: "hdp-text nav-link text-dark" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Qui sommes-nous?", "#who", class: "hdp-text nav-link text-dark" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Notre positionnement", "#what", class: "hdp-text nav-link text-dark" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Blog", "https://medium.com/@czmclaudiu", target: :_blank, class: "hdp-text nav-link text-dark" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Nos références", "#references", class: "hdp-text nav-link text-dark" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Contact", "#contact", class: "hdp-text nav-link text-dark" %>
-          </li>
+          <p class="nav-item">
+            <%= link_to "Accueil", "/", class: "hdp-text nav-link text-dark" %>
+          </p>
+          <p class="nav-item">
+            <%= link_to "Nos accompagnements", accompagnements_path, class: "hdp-text nav-link text-dark" %>
+          </p>
+          <p class="nav-item">
+            <%# link_to "Notre positionnement", "#what", class: "hdp-text nav-link text-dark" %>
+          </p>
+          <p class="nav-item">
+            <%= link_to "Inspiration", "https://medium.com/@czmclaudiu", target: :_blank, class: "hdp-text nav-link text-dark" %>
+          </p>
+          <p class="nav-item">
+            <%# link_to "Nos références", "#references", class: "hdp-text nav-link text-dark" %>
+          </p>
+          <p class="nav-item">
+            <%= link_to "Contact", "/#contact", class: "hdp-text nav-link text-dark" %>
+          </p>
       </ul>
     </div>
   </div>
