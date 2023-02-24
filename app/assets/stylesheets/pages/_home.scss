@@ -3,31 +3,35 @@
 .container-homepage {
   width: 100%;
   margin: auto;
+  margin-top: 30px;
 }
 
 .container-start {
-  height: 50vh;
-  background-color: lightgray;
+  height: 25vh;
+  background-color: #3A98B9;
+  color: white;
 }
 
 .container-who {
   height: 50vh;
-  background-color: salmon;
+  background-color: #FFF1DC;
 }
 
 .container-what {
-  height: 50vh;
-  background-color: lightgray;
+  height: 25vh;
+  background-color: #3A98B9;
+  color: white;
 }
 
 .container-references {
-  height: 50vh;
-  background-color: salmon;
+  height: 25vh;
+  background-color: #FFF1DC;
 }
 
 .container-contact {
-  height: 50vh;
-  background-color: lightgray;
+  height: 25vh;
+  background-color: #3A98B9;
+  color: white;
 }
 
 .text{
@@ -50,6 +54,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  box-shadow: 10px 5px 9px black;
 }
 
 .offer{
