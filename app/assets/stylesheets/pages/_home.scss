@@ -7,29 +7,29 @@
 }
 
 .container-start {
-  height: 25vh;
+  height: 50vh;
   background-color: #3A98B9;
   color: white;
 }
 
 .container-who {
-  height: 50vh;
+  height: 75vh;
   background-color: #FFF1DC;
 }
 
 .container-what {
-  height: 25vh;
+  height: 100vh;
   background-color: #3A98B9;
   color: white;
 }
 
 .container-references {
-  height: 25vh;
+  height: 50vh;
   background-color: #FFF1DC;
 }
 
 .container-contact {
-  height: 25vh;
+  height: 50vh;
   background-color: #3A98B9;
   color: white;
 }
@@ -48,11 +48,7 @@
   align-items: center;
   border-radius: 10px;
   background-color: #c3e0e0;
-  display: inline-flex;
   margin: 2%;
-  border:none;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
   box-shadow: 10px 5px 9px black;
 }
@@ -79,4 +75,124 @@
 .middle-offer-borders {
   border-left: 1px solid $white;
   border-right: 1px solid $white;
+}
+
+.coaches {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 433px;
+}
+
+.coach-pic {
+  border-radius: 50%;
+  height: 50%;
+  box-shadow: 10px 5px 9px lightgray;
+}
+
+.coach {
+  width: 100%;
+  height: 50vh;
+  transition: all 0.75s ease;
+  transform-style: preserve-3d;
+  background-color: white;
+  text-align: center;
+  box-shadow: 5px 5px 9px black;
+  margin: 20px;
+}
+
+.coach:hover {
+  transform: rotateY(180deg);
+}
+
+.coach-text {
+  color: black;
+  margin: 10px;
+  padding: 10px;
+  text-align: justify;
+  font-size: small;
+}
+
+.fron, .bac {
+  /* This part controls the flip */
+  backface-visibility: hidden;
+  /* Size and card position */
+  width: 100%;
+  height: 100%;
+
+  /* Appearance */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+}
+
+.front {
+  text-align: center;
+  transform: rotateY(360deg);
+  /* This part controls the flip */
+  backface-visibility: hidden;
+  /* Size and card position */
+  width: 100%;
+  height: 100%;
+
+  /* Appearance */
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+  color: black;
+}
+
+.back {
+  text-align: center;
+  transform: rotateY(180deg);
+  background-color: white;
+  /* This part controls the flip */
+  backface-visibility: hidden;
+  /* Size and card position */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  /* Appearance */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+  color: black;
+}
+
+.flip-card {
+  height: 300px;
+  width: 300px;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  background-color: white;
+}
+.flip-card-front,
+.flip-card-back {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  backface-visibility: hidden;
+  color: black;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  color: black;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }

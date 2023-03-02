@@ -11,3 +11,14 @@
   border-width: 1px;
   box-shadow: 5px 5px 9px grey;
 }
+
+.two-columns {
+  display: grid;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 50%;
+  padding: 10px;}
