@@ -1,5 +1,4 @@
-
-<div class="navbar navbar-expand-sm navbar-momentum">
+<div class="navbar navbar-expand-sm navbar-momentum sticky-top">
   <div class = "container-fluid">
     <%# start of left side %>
     <%= link_to "#top" do %>
@@ -21,8 +20,16 @@
         </li>
         <li>
           <p class="nav-item">
-            <%= link_to "Accompagnements", accompagnements_path, class: "nav-link text-dark" %>
+            <%# link_to "Accompagnements", accompagnements_path, class: "nav-link text-dark" %>
           </p>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav-link text-dark" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Accompagnements</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/visionning">Visionning</a>
+            <a class="dropdown-item" href="/leadership">Leadership coaching & culture managériale</a>
+            <a class="dropdown-item" href="/transforming">Transforming</a>
+          </div>
         </li>
         <li>
           <p class="nav-item">
