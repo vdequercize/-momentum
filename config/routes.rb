@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   get 'leadership', to: 'pages#leadership'
   get 'accompagnements', to: 'pages#accompagnements'
   get 'convictions', to: 'pages#convictions'
+  get 'equipe', to: 'pages#equipe'
   resources :articles
 end
